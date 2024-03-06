@@ -49,13 +49,13 @@
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
                 <a class="nav-link" href="{{ route('tenant.stall') }}" style="color: #343a40;">
                     <i class="fas fa-warehouse"></i> My Stall
                 </a>
             </div>
-        </div>
+        </div> -->
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
                         <a href="/about" style="color: #ffffff;">
