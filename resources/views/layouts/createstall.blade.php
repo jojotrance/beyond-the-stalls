@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <style>
+        <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: white;
+            background-color: #718355;
         }
 
         .container {
@@ -20,8 +20,8 @@
         form {
             width: 75%;
             height: 75%;
-            background-color: white;
-            padding: 20px;
+            background-color: #b5c99a;
+            padding: 20px;2
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
