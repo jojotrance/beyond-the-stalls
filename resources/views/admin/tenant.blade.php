@@ -5,6 +5,7 @@
         @include('header.headers')
     </x-slot>
     <style>
+  
   table thead {
     background-color: #3a5a40;
     color: white; 
