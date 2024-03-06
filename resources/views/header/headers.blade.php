@@ -1,5 +1,5 @@
 <header id="header">
-    <nav class="navbar navbar-expand-lg navbar-white" style="background-color: white;">
+    <nav class="navbar navbar-expand-lg navbar-white" style="background-color: #333d29;">
         <a class="navbar-brand" href="{{ route('home') }}" style="color: #343a40;">
             <h3 class="px-5">
                 <i class="fas fa-building"></i> BeyondTheStalls
