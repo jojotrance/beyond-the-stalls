@@ -20,26 +20,26 @@
 <body class="font-sans antialiased">
     <div class="min-h-screen bg-gray-100">
         <header id="header">
-            <nav class="navbar navbar-expand-lg navbar-white" style="background-color: white;">
-                <a class="navbar-brand" href="{{ route('home') }}" style="color: #343a40;">
+            <nav class="navbar navbar-expand-lg navbar-white" style="background-color: #333d29;">
+                <a class="navbar-brand" href="{{ route('home') }}" style="color: #ffffff;">
                     <h3 class="px-5">
                         <i class="fas fa-building"></i> BeyondTheStalls
                     </h3>
                 </a>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ml-auto">
-                        <a class="nav-link" href="{{ route('tenant.stall') }}" style="color: #343a40;">
+                        <a class="nav-link" href="{{ route('tenant.stall') }}" style="color: #ffffff;">
                             <i class="fas fa-warehouse"></i> My Stall
                         </a>
                     </div>
                 </div>
                 <div class="ml-auto">
                     <div class="nav-item dropdown">
-                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false" style="color: black;">
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false" style="color: #ffffff;">
                             <i class="fas fa-user"></i> {{ Auth::user()->name }}
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{{ route('profile.edit') }}" style="color: black;">
+                            <a class="dropdown-item" href="{{ route('profile.edit') }}" style="color: #333d29;">
                                 <i class="fas fa-user"></i> View Profile
                             </a>
                             <div class="dropdown-divider"></div>
