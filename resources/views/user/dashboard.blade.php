@@ -4,7 +4,7 @@
     <x-slot name="header">
         @include('header.header')
     </x-slot>
-    <style>
+    <!-- <style>
 
         .container {
             display: flex;
@@ -80,7 +80,7 @@
             <h4><i class="fas fa-car"></i> Parking</h4>
         </a>
     </div>
-</div>
+</div> -->
 </x-app-layout>
 @endsection
             
