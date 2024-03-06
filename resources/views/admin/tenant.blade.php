@@ -4,8 +4,18 @@
     <x-slot name="header">
         @include('header.headers')
     </x-slot>
-    <table class="table table-striped text-center"> <!-- Center align content -->
-        <thead>
+    <style>
+  table thead {
+    background-color: #3a5a40;
+    color: white; 
+  }
+</style>
+    <table class="table table-hover table-striped">
+    <div class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+                      <thead>
             <tr>
                 <th scope="col">Stall Codename</th>
                 <th scope="col">Image</th>
