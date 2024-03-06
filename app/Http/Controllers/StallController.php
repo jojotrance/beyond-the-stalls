@@ -26,35 +26,32 @@ class StallController extends Controller
 
     public function store(Request $request)
     {
-        $rules = [
-            'img_path' => 'mimes:jpg,bmp,png',
-        ];
+        $request->validate([
+            'codename' => 'required|string',
+            'description' => 'required|string',
+            'status' => 'required|string',
+            'rental_rate' => 'required|numeric',
+            'img_path.*' => 'required|image|mimes:jpg,bmp,png|max:2048', // Adjust max file size as needed
+        ]);
 
-        $validator = Validator::make($request->all(), $rules);
-
-        if ($validator->fails()) {
-            return redirect()->back()
-                ->withErrors($validator)
-                ->withInput();
-        }
         $stall = new Stall();
         $stall->codename = $request->codename;
         $stall->description = $request->description;
         $stall->status = $request->status;
         $stall->rental_rate = $request->rental_rate;
 
-        $path = Storage::putFileAs(
-            'public/images',
-            $request->file('img_path'),
-            $request->file('img_path')->getClientOriginalName()
-        );
+        if ($request->hasFile('img_path')) {
+            foreach ($request->file('img_path') as $image) {
+                $path = $image->store('public/images');
+                $stall->img_path = str_replace('public/', 'storage/', $path); 
+            }
+        }
 
-        $stall->img_path = 'storage/images/' . $request->file('img_path')->getClientOriginalName();
         $stall->save();
-        return redirect()->route('stall.index');
 
+        return redirect()->route('stall.index')->with('success', 'Stall created successfully.');
     }
-
+    
     public function edit(string $id)
     {
         $stall = Stall::find($id);
