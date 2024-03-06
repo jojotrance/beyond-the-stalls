@@ -6,7 +6,25 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>BeyondTheStalls</title>
-
+<style>
+    .transparent-button {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    color: #000; /* Example text color */
+}
+    /* .about-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; */
+}
+    </style>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
@@ -27,9 +45,16 @@
                     </h3>
                 </a>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ml-auto">
+                    <div class="navbar-nav">
                         <a class="nav-link" href="{{ route('tenant.stall') }}" style="color: #ffffff;">
                             <i class="fas fa-warehouse"></i> My Stall
+                        </a>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                        <a href="/about" style="color: #ffffff;">
+                        <i class="fas fa-list"></i> About
                         </a>
                     </div>
                 </div>
