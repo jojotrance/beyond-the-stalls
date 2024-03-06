@@ -90,7 +90,7 @@
 
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-      <img src="{{ url($stall->img_path) }}" alt="listener image" width="50" height="50">
+      <img src="{{ url($stall->img_path) }}" alt="stall image" width="50" height="50">
     </div>
   </div>
 
