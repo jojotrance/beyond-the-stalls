@@ -56,5 +56,12 @@
                 </a>
             </div>
         </div>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                        <a href="/about" style="color: #ffffff;">
+                        <i class="fas fa-list"></i> About
+                        </a>
+                    </div>
+                </div>
     </nav>
 </header>
