@@ -44,13 +44,13 @@
                         <i class="fas fa-building"></i> BeyondTheStalls
                     </h3>
                 </a>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link" href="{{ route('tenant.stall') }}" style="color: #ffffff;">
                             <i class="fas fa-warehouse"></i> My Stall
                         </a>
                     </div>
-                </div>
+                </div> -->
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
                         <a href="/about" style="color: #ffffff;">
