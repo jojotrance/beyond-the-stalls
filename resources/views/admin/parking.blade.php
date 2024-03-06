@@ -12,7 +12,7 @@ table thead {
     color: white; 
   }
   
-            body {
+  body {
         background-image: url('/images/430837379_333900309104849_4293786303333364672_n.png');
             background-size: cover;
             background-position: center;
@@ -49,7 +49,7 @@ table thead {
                             </a>
                         </div>
                     </div>
-                    <table class="table table-hover table-striped">
+                    <table class="table table-hover table-light">
                         <thead>
                             <tr>
                                 <th scope="col">Plate Number</th>
