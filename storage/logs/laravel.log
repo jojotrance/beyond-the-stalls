@@ -15402,3 +15402,19 @@ Did you mean one of these?
 #54 C:\\Users\\joey\\Documents\\0COLLEGE\\2A\\2nd Sem\\System, Analysis & Design\\beyond-the-stalls\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('...')
 #55 {main}
 "} 
+[2024-03-07 10:17:49] local.ERROR: Command "storage:link\" is not defined.
+
+Did you mean one of these?
+    storage:link
+    storage:unlink {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"storage:link\\\" is not defined.
+
+Did you mean one of these?
+    storage:link
+    storage:unlink at C:\\Users\\Gwyn\\Desktop\\VSC\\beyond-the-stalls\\beyond-the-stalls\\vendor\\symfony\\console\\Application.php:737)
+[stacktrace]
+#0 C:\\Users\\Gwyn\\Desktop\\VSC\\beyond-the-stalls\\beyond-the-stalls\\vendor\\symfony\\console\\Application.php(266): Symfony\\Component\\Console\\Application->find('storage:link\\\\')
+#1 C:\\Users\\Gwyn\\Desktop\\VSC\\beyond-the-stalls\\beyond-the-stalls\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\Users\\Gwyn\\Desktop\\VSC\\beyond-the-stalls\\beyond-the-stalls\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\Users\\Gwyn\\Desktop\\VSC\\beyond-the-stalls\\beyond-the-stalls\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 {main}
+"} 
